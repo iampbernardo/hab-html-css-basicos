@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introducción al HTML y CSS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/habitissimo.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="icon" type="image/png" href="https://es.habcdn.com/static/root/favicon-32x32.png" sizes="32x32" />
+  		<link rel="icon" type="image/png" href="https://es.habcdn.com/static/root/android-chrome-192x192.png" sizes="192x192" />
+  		<link rel="icon" type="image/png" href="https://es.habcdn.com/static/root/favicon-96x96.png" sizes="96x96" />
+  		<link rel="icon" type="image/png" href="https://es.habcdn.com/static/root/favicon-16x16.png" sizes="16x16" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="title">
+					<h2>Introducción a HTML y CSS</h2>
+					<p>
+						<small>Una explicación para <i>profanos</i> </small>
+					</p>
+				</section>
+				<section id="client-server">
+					<section>
+						<h3>¿Qué hace falta para que funcione una web?</h3>
+						<p class="fragment">Cliente</p>
+						<p class="fragment">y servidor</p>
+					</section>
+					<section>
+						<h3>Cliente</h3>
+						<p class="fragment">Envía solicitudes con lo que espera recibir</p>
+						<p class="fragment">En nuestro caso es el ordenador desde el que <a href="https://habitissimo.es" target="_blank">vistamos la web</a></p>
+					</section>
+					<section>
+						<h3>Servidor</h3>
+						<p class="fragment">Recibe la solicitud, procesa la información y envía una respuesta</p>
+					</section>
+					<section>
+						<h3>Información procesada</h3>
+						<p class="fragment">El cliente recibe la respuesta y la entrega. En nuestro caso, la muestra por pantalla</p>
+					</section>
+				</section>
+				<section>
+					<h3>Vamos a jugar con código</h3>
+					<iframe src="//giphy.com/embed/e2H2A3mdcNJfi" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					<p class="fragment"><a href="https://codepen.io" target="_blank">Codepen.io --></a></p>
+				</section>
+				<section id="html">
+					<section>
+						<h3>HTML desde cero</h3>
+						<img src="http://theworstthingsforsale.com/wp-content/uploads/2013/04/tumblr_me9izrcMfd1rt7j2bo1_500.jpg" height="250px" alt="" class="fragment">
+					</section>
+					<section>
+						<h3>¿Qué no es HTML?</h3>
+						<p class="fragment">HTML no es programación</p>
+					</section>
+
+					<section>
+						<h3>Así es HTML</h3>
+						<iframe src="//giphy.com/embed/quEsMOrr3hmQ8" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><small><a href="http://giphy.com/gifs/matrix-awesome-gifs-gif-quEsMOrr3hmQ8">via GIPHY</a></small></p>
+					</section>
+
+					<section>
+						<h3>No, en realidad es así</h3>
+						<img src="img/hab-source-code.png" height="450px" alt="">
+					</section>
+
+					<section>
+						<h3>¿Qué es HTML?</h3>
+						<p class="fragment">HTML es un lenguaje de marcado</p>
+						<p class="fragment">Nos sirve para estructurar la información y compartirla en un documento</p>
+					</section>
+				</section>
+				<section id="show-html">
+					<section>
+						<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="">
+					</section>
+					<section>
+						<h3>Etiquetas y semántica</h3>
+					</section>
+					<section>
+						<h3>Cómo escribimos tags</h3>
+						<pre><code class="hljs" style="word-wrap: break-word;text-align: center;">&lt;html&gt;Contenido entre etiquetas&lt;/html&gt;</code></pre>
+						<p>Etiquetas y atributos</p>
+						<p>Id's y clases</p>
+					</section>
+					<section>
+						<h3>Bloques principales</h3>
+						<ul>
+							<li>header</li>
+							<li>footer</li>
+							<li>section</li>
+							<li>article</li>
+							<li class="fragment">...</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Encabezados</h3>
+					</section>
+					<section>
+						<h3>Listas ordenadas y desordenadas</h3>
+					</section>
+					<section>
+						<h3>Párrafos y span</h3>
+					</section>
+					<section>
+						<h3>Imágenes y enlaces</h3>
+					</section>
+					<section>
+						<h3>Otras etiquetas</h3>
+						<p class="fragment">video, iframe ...</p>
+					</section>
+				</section>
+				<section id="css">
+					<section>
+						<h3>A ver eso del CSS</h3>
+						<iframe src="//giphy.com/embed/v8GQeacAWYFcQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					</section>
+					<section>
+						<h3>Etiquetas style</h3>
+						<pre><code class="hljs" style="word-wrap: break-word;text-align: center;">&lt;style&gt;html { background-color: awesome}&lt;/style&gt;</code></pre>
+					</section>
+					<section>
+						<h3>Enlazado en un documento <code>.css</code></h3>
+					</section>
+					<section>
+						<h3>
+							Sintaxis del CSS y cómo referenciar elementos
+						</h3>
+						<p class="fragment">Id, class, elementos, pseudo-elementos, pseudo-clases ... </p>
+					</section>
+					<section>
+						<h3>Algunas modificaciones</h3>
+						<p class="fragment">Color, fondo, tamaño, márgenes</p>
+					</section>
+					<section>
+						<h3>Unidades básicas</h3>
+						<p class="fragment">px y porcentajes</p>
+					</section>
+					<section>
+						<h3>Cascada y especificidad</h3>
+					</section>
+					<section>
+						<h3>Modelo de caja</h3>
+					</section>
+				</section>
+				<section>
+					<h3>Preguntas</h3>
+					<iframe src="//giphy.com/embed/3o7TKw7vcnyQa0Hldu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				</section>
+				<section>
+					<h3>Enlaces</h3>
+					<ul>
+						<li>MDN (documentación) <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">(Mozilla Developer Network)</a></li>
+						<li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials" target="_blank">(tutoriales)</a></li>
+						<li>Codepen.io <a href="https://codepen.io" target="_blank">para pruebas</a></li>
+						<li>Tutoriales de <a href="http://learn.shayhowe.com/html-css/" target="_blank">HTML y CSS</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
